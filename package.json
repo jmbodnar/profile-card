@@ -1,0 +1,19 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch:css": "sass --watch docs/css/scss/main.scss docs/css/main.css",
+    "serve": "browser-sync start --server ./docs --files ./docs/* & npm run watch:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "sass": "^1.36.0"
+  }
+}

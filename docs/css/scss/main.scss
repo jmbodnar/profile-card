@@ -1,0 +1,97 @@
+/* ----- Sanitize ----- */
+@import "sanitize";
+
+/* ----- Variables ----- */
+
+// Colors
+$color-cyan-dark: hsl(185, 75%, 39%);
+$color-blue-desat: hsl(229, 23%, 23%);
+$color-grayblue-dark: hsl(227, 10%, 46%);
+$color-gray-neutraldark: hsl(0, 0%, 59%);
+
+// Fonts
+$font-sans: "Kumbh Sans";
+$font-weight-light: 400;
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: $font-sans;
+    color: $color-blue-desat;
+    background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+    background-attachment: scroll;
+    background-position: -400px -400px, 800px 600px;
+    background-size: 800px, 1000px;
+    background-color: $color-cyan-dark;
+    background-repeat: no-repeat;
+    line-height: 1;
+}
+
+.card {
+    min-width: 330px;
+    min-height: 375px;
+    background: white;
+    border-radius: 1em;
+    overflow: hidden;
+    text-align: center;
+
+    &__header {
+        height: 140px;
+        background-image: url(../../images/bg-pattern-card.svg);
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+
+    &__image {
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-top: 140px;
+        border: 5px solid white;
+    }
+
+    &__line {
+        border: none;
+        border-top: 1px solid hsla(0, 0%, 83%, 0.75);
+    }
+
+    &__content {
+        background: white;
+    }
+
+    &__heading {
+        font-size: 0.9375rem;
+    }
+
+    .heading__number,
+    .heading__country {
+        font-weight: lighter;
+        color: $color-gray-neutraldark;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        .list__item {
+            font-size: 0.75rem;
+            color: $color-gray-neutraldark;
+            font-weight: 200;
+            letter-spacing: 0.25ch;
+        }
+
+        .list__head {
+            letter-spacing: initial;
+            display: block;
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin-bottom: 0.5em;
+            color: $color-blue-desat;
+        }
+    }
+}
