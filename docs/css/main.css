@@ -543,7 +543,7 @@ body {
   place-items: center;
   font-family: "Kumbh Sans";
   color: #2d3248;
-  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
   background-attachment: scroll;
   background-position: -400px -400px, 800px 600px;
   background-size: 800px, 1000px;
@@ -562,7 +562,7 @@ body {
 }
 .card__header {
   height: 140px;
-  background-image: url(../../images/bg-pattern-card.svg);
+  background-image: url("/images/bg-pattern-card.svg");
   min-height: 100px;
   display: flex;
   justify-content: center;
